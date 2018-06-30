@@ -6,7 +6,7 @@
 //  Copyright © 2018 Vladyslav Yakovlev. All rights reserved.
 //
 
-#import <Cocoa/Cocoa.h>
+#import <Foundation/Foundation.h>
 
 //! Project version number for WordSuggester.
 FOUNDATION_EXPORT double WordSuggesterVersionNumber;

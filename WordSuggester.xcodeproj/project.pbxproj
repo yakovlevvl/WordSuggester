@@ -7,13 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F53D2A4B20E5B021001A9CB4 /* EnglishModel.txt in Resources */ = {isa = PBXBuildFile; fileRef = F53D2A4A20E5B021001A9CB4 /* EnglishModel.txt */; };
 		F5E1A48720CE9D1F00302AB3 /* WordSuggester.h in Headers */ = {isa = PBXBuildFile; fileRef = F5E1A48520CE9D1F00302AB3 /* WordSuggester.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F5E1A49220CE9D5E00302AB3 /* LanguageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5E1A48D20CE9D5D00302AB3 /* LanguageModel.swift */; };
+		F5E1A49320CE9D5E00302AB3 /* Trie.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5E1A48E20CE9D5D00302AB3 /* Trie.swift */; };
+		F5E1A49420CE9D5E00302AB3 /* TrieNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5E1A48F20CE9D5D00302AB3 /* TrieNode.swift */; };
+		F5E1A49620CE9D5E00302AB3 /* WordSuggester.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5E1A49120CE9D5E00302AB3 /* WordSuggester.swift */; };
+		F5E1A49820CE9D9E00302AB3 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5E1A49720CE9D9D00302AB3 /* Helper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F53D2A4A20E5B021001A9CB4 /* EnglishModel.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = EnglishModel.txt; sourceTree = "<group>"; };
 		F5E1A48220CE9D1F00302AB3 /* WordSuggester.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WordSuggester.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5E1A48520CE9D1F00302AB3 /* WordSuggester.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WordSuggester.h; sourceTree = "<group>"; };
 		F5E1A48620CE9D1F00302AB3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F5E1A48D20CE9D5D00302AB3 /* LanguageModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LanguageModel.swift; sourceTree = "<group>"; };
+		F5E1A48E20CE9D5D00302AB3 /* Trie.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Trie.swift; sourceTree = "<group>"; };
+		F5E1A48F20CE9D5D00302AB3 /* TrieNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrieNode.swift; sourceTree = "<group>"; };
+		F5E1A49120CE9D5E00302AB3 /* WordSuggester.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WordSuggester.swift; sourceTree = "<group>"; };
+		F5E1A49720CE9D9D00302AB3 /* Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,6 +39,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F53D2A4C20E844B3001A9CB4 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				F5E1A49720CE9D9D00302AB3 /* Helper.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		F59870CA20D05A1E000B46A2 /* LanguageModels */ = {
+			isa = PBXGroup;
+			children = (
+				F53D2A4A20E5B021001A9CB4 /* EnglishModel.txt */,
+			);
+			path = LanguageModels;
+			sourceTree = "<group>";
+		};
 		F5E1A47820CE9D1F00302AB3 = {
 			isa = PBXGroup;
 			children = (
@@ -46,10 +74,24 @@
 		F5E1A48420CE9D1F00302AB3 /* WordSuggester */ = {
 			isa = PBXGroup;
 			children = (
+				F5E1A4D720D0265200302AB3 /* Models */,
+				F53D2A4C20E844B3001A9CB4 /* Helpers */,
+				F59870CA20D05A1E000B46A2 /* LanguageModels */,
 				F5E1A48520CE9D1F00302AB3 /* WordSuggester.h */,
 				F5E1A48620CE9D1F00302AB3 /* Info.plist */,
 			);
 			path = WordSuggester;
+			sourceTree = "<group>";
+		};
+		F5E1A4D720D0265200302AB3 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F5E1A48E20CE9D5D00302AB3 /* Trie.swift */,
+				F5E1A48F20CE9D5D00302AB3 /* TrieNode.swift */,
+				F5E1A48D20CE9D5D00302AB3 /* LanguageModel.swift */,
+				F5E1A49120CE9D5E00302AB3 /* WordSuggester.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -95,6 +137,7 @@
 				TargetAttributes = {
 					F5E1A48120CE9D1F00302AB3 = {
 						CreatedOnToolsVersion = 9.4;
+						LastSwiftMigration = 0940;
 					};
 				};
 			};
@@ -120,6 +163,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F53D2A4B20E5B021001A9CB4 /* EnglishModel.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -130,6 +174,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F5E1A49220CE9D5E00302AB3 /* LanguageModel.swift in Sources */,
+				F5E1A49620CE9D5E00302AB3 /* WordSuggester.swift in Sources */,
+				F5E1A49420CE9D5E00302AB3 /* TrieNode.swift in Sources */,
+				F5E1A49320CE9D5E00302AB3 /* Trie.swift in Sources */,
+				F5E1A49820CE9D9E00302AB3 /* Helper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,6 +307,7 @@
 		F5E1A48B20CE9D1F00302AB3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -277,6 +327,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = wox.WordSuggester;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "macosx iphonesimulator iphoneos appletvsimulator appletvos";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
@@ -284,6 +336,7 @@
 		F5E1A48C20CE9D1F00302AB3 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -303,6 +356,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = wox.WordSuggester;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "macosx iphonesimulator iphoneos appletvsimulator appletvos";
 				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
